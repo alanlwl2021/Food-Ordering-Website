@@ -29,18 +29,19 @@ elif selected_card == "checkout": st.switch_page("pages/4_Checkout.py")
 
 
 
-st.title("Restaurant Name, ig")
+st.title("1MALAYSIA Restaurant")
 st.header("Menu")
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    bf.vertical_button("CHINESE FOOD", "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8", "chinese_food")
+    bf.vertical_button("CHINESE FOOD", "https://www.sidechef.com/recipe/844c8140-fc58-42d5-8eff-997aab276bc9.jpeg?d=1408x1120", "chinese_food")
 with col2:
-    bf.vertical_button("MALAY FOOD", "https://images.unsplash.com/photo-1552611052-33e04de081de", "malay_food")
+    bf.vertical_button("MALAY FOOD", "https://images.getrecipekit.com/20231116072724-c2-a9andy_cooks_thumbnails_nasi_lemak_01.jpg?aspect_ratio=4:3&quality=90&", "malay_food")
 with col3:
-    bf.vertical_button("INDIAN FOOD", "https://images.unsplash.com/photo-1562967916-eb82221dfb92", "indian_food")
+    bf.vertical_button("INDIAN FOOD", "https://www.elmundoeats.com/wp-content/uploads/2017/11/Roti-Canai-3.jpg", "indian_food")
 
-bf.floating_checkout_button(total_price="RM" + f"{dm.get_total():.2f}", key="checkout")
+bf.floating_checkout_button()
+# bf.floating_menu_button()
 
 # https://images.getrecipekit.com/20231116072724-c2-a9andy_cooks_thumbnails_nasi_lemak_01.jpg?aspect_ratio=4:3&quality=90&
