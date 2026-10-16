@@ -37,11 +37,8 @@ col1, col2, col3 = st.columns(3)
 with col1:
     bf.vertical_button("CHINESE FOOD", "https://rasamalaysia.com/wp-content/uploads/2009/11/char-koay-teow4.jpg", "chinese_food")
 with col2:
-    bf.vertical_button("MALAY FOOD", "https://images.getrecipekit.com/20231116072724-c2-a9andy_cooks_thumbnails_nasi_lemak_01.jpg?aspect_ratio=4:3&quality=90&", "malay_food")
+    bf.vertical_button("MALAY FOOD", "https://seemagetsbaked.com/wp-content/uploads/2024/08/Nasi-Lemak-576x1024.jpg", "malay_food")
 with col3:
-    bf.vertical_button("INDIAN FOOD", "https://www.elmundoeats.com/wp-content/uploads/2017/11/Roti-Canai-3.jpg", "indian_food")
+    bf.vertical_button("INDIAN FOOD", "https://rasamalaysia.com/wp-content/uploads/2024/06/roti-canai1.jpg", "indian_food")
 
 bf.floating_checkout_button()
-# bf.floating_menu_button()
-
-# https://images.getrecipekit.com/20231116072724-c2-a9andy_cooks_thumbnails_nasi_lemak_01.jpg?aspect_ratio=4:3&quality=90&
