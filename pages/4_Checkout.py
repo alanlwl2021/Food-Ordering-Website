@@ -6,7 +6,6 @@ sys.path.append(str(Path(__file__).parent.parent))
 import button_formats as bf
 import data_manager as dm
 
-# Handle item removal via URL query parameters
 remove_idx = st.query_params.get("remove")
 if remove_idx is not None:
     try:
@@ -23,6 +22,7 @@ if remove_idx is not None:
 st.title("Order Checkout")
 
 orders = dm.load_order()
+selected_card = st.query_params.get("selected")
 
 if not orders:
     st.info("Your cart is empty!")
@@ -77,7 +77,10 @@ else:
     else:
         st.markdown(f"<div>{complete_table}</div>", unsafe_allow_html=True)
 
+if selected_card == "menu":
+    st.switch_page("MainMenu.py")
+
 if st.button("Checkout", type="primary", use_container_width=True):
-    # Optional: clear the cart file here if you want
-    # dm.save_order([])
     st.switch_page("pages/5_Final.py")
+
+bf.floating_menu_button()
