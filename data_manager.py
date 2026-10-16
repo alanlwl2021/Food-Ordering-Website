@@ -5,8 +5,23 @@ from pathlib import Path
 ORDER_FILE = Path("order_data.json")
 
 FOOD_ITEMS = {
-    "nasi_lemak": {"name": "NASI LEMAK", "price": 10.50},
-    "ckt": {"name": "CHAR KWAY TEOW", "price": 8.90},
+    "hokkien_mee": {"name": "HOKKIEN MEE", "price": 7.50},
+    "ckt": {"name": "CHAR KWAY TEOW", "price": 6.00},
+    "bkt": {"name": "BAK KUT TEH", "price": 10.00},
+    "chicken_rice": {"name": "CHICKEN RICE", "price": 5.50},
+    "laksa": {"name": "LAKSA", "price": 4.50},
+
+    "nasi_lemak": {"name": "NASI LEMAK", "price": 1.50},
+    "rendang": {"name": "RENDANG", "price": 6.00},
+    "nasi_goreng": {"name": "NASI GORENG", "price": 5.50},
+    "sate": {"name": "SATE", "price": 1.00},
+    "nasi_kerabu": {"name": "NASI KERABU", "price": 7.00},
+
+    "roti_canai": {"name": "ROTI CANAI", "price": 1.00},
+    "biryani": {"name": "BIRYANI", "price": 9.00},
+    "samosas": {"name": "SAMOSAS", "price": 1.50},
+    "nasi_kandar": {"name": "NASI KANDAR", "price": 8.00},
+    "thosai": {"name": "THOSAI", "price": 2.00},
 }
 
 # def load_cart_total() -> float:
