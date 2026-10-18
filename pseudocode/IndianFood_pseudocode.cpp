@@ -48,7 +48,7 @@ int IndianFood() {
                 case "confirm":
                     order_total += selected_price*quantity;
                     order_list.insert(order_list.end(), quantity, selected_food);
-                    DISPLAY "Successfully ordered " + quantity + selected_food + "for RM" + selected_price*quantity;
+                    DISPLAY "Successfully added " + quantity + selected_food + "for RM" + selected_price*quantity;
                     break;
             }
         }
