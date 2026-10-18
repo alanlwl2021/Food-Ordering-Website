@@ -1,5 +1,5 @@
 int ChineseFood() {
-    DISPLAY "Chinese Food";
+    DISPLAY "Malay Food";
     DISPLAY m1, m1p, m2, m2p, m3, m3p, m4, m4p, m5, m5p;
     DISPLAY "goto Menu", "goto Checkout";
 
