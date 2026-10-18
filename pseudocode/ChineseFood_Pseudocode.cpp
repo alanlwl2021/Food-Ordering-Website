@@ -29,7 +29,12 @@ int ChineseFood() {
         }
 
         quantity = 1;
+        DISPLAY "Confirm Order";
+        DISPLAY "Add" + selected_food + "for RM" + selected_price + "each?";
         while true {
+            DISPLAY "Quantity: " + quantity;
+            DISPLAY "+", "-", "Confirm", "Cancel";
+            DISPLAY "Subtotal: " + selected_price * quantity;
             READ input;
             switch(input) {
                 case "+":
@@ -43,7 +48,7 @@ int ChineseFood() {
                 case "confirm":
                     order_total += selected_price*quantity;
                     order_list.insert(order_list.end(), quantity, selected_food);
-                    DISPLAY "Successfully ordered " + quantity + selected_food + "for RM" + selected_price*quantity;
+                    DISPLAY "Successfully added " + quantity + selected_food + "for RM" + selected_price*quantity;
                     break;
             }
         }
