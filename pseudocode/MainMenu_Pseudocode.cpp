@@ -37,6 +37,8 @@ order_total = 0
 
 int MainMenu()
 {
+    DISPLAY "Malaysia Restaurant";
+    DISPLAY "Menu";
     DISPLAY "Malay Food", "Chinese Food", "Indian Food";
     DISPLAY "goto Checkout";
 
