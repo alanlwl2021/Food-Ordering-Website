@@ -17,9 +17,9 @@ int Checkout() {
                 DISPLAY order_list[i];
             }
             DISPLAY "Total: RM" + order_total;
-            END
+            return 0;
         }
         default: DISPLAY "Error: unrecognized option";
-                END
+                return 0;
     }
 }
