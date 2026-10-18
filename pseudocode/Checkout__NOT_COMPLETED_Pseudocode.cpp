@@ -2,6 +2,24 @@ int Checkout() {
     DISPLAY "Order Checkout";
     DISPLAY "goto Menu";
 
-    while ()
-        // brb i need to actually read how to write while loop first
+    for (int i = 0; i <= order_list.size(); i++) {
+        DISPLAY order_list[i];
+    }
+    DISPLAY "Total: RM" + order_total;
+    DISPLAY "Checkout";
+    READ input;
+    switch (input) {
+        case "goto Menu": MainMenu();
+        case "Checkout": {
+            DISPLAY "Thank you";
+            DISPLAY "Ordered Food:";
+            for (int i = 0; i <= order_list.size(); i++) {
+                DISPLAY order_list[i];
+            }
+            DISPLAY "Total: RM" + order_total;
+            END
+        }
+        default: DISPLAY "Error: unrecognized option";
+                END
+    }
 }
