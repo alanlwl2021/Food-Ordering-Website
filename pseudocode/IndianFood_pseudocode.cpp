@@ -29,7 +29,12 @@ int IndianFood() {
         }
 
         quantity = 1;
+        DISPLAY "Confirm Order";
+        DISPLAY "Add" + selected_food + "for RM" + selected_price + "each?";
         while true {
+            DISPLAY "Quantity: " + quantity;
+            DISPLAY "+", "-", "Confirm", "Cancel";
+            DISPLAY "Subtotal: " + selected_price * quantity;
             READ input;
             switch(input) {
                 case "+":
